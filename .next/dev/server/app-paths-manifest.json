@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/live-cctv-feed/page": "app/admin/live-cctv-feed/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/users/page": "app/admin/users/page.js",
+  "/ioc-dashboard/page": "app/ioc-dashboard/page.js",
+  "/login/page": "app/login/page.js"
+}

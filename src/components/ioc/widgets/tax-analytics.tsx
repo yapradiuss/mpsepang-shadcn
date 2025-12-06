@@ -44,7 +44,7 @@ interface TaxData {
   count: number;
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
 
 const CATEGORY_COLORS: Record<TaxCategory, string> = {
   current_income: "#10b981",

@@ -122,8 +122,8 @@ export default function CCTVStatus({
     setError(null);
     
     try {
-      const camonoffBatchUrl = 'http://http://43.216.228.155:3001//api/camonoff/batch';
-      const modbusBatchUrl = 'http://http://43.216.228.155:3001//api/modbus/batch';
+      const camonoffBatchUrl = 'http://43.216.228.155:3001/api/camonoff/batch';
+      const modbusBatchUrl = 'http://43.216.228.155:3001/api/modbus/batch';
       const now = Date.now();
       
       // Check if we can use cached data for all devices

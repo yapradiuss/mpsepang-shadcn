@@ -52,7 +52,7 @@ import {
 import { useState, useEffect, useCallback } from "react";
 import { logPageView } from "@/lib/audit-logger";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
 
 interface Page {
   id: number;
@@ -264,15 +264,12 @@ export default function UsersPage() {
     e.preventDefault();
     
     try {
+      const { password, ...restFormData } = formData;
       const payload = {
-        ...formData,
+        ...restFormData,
         page_ids: selectedPages,
+        ...(isEditMode && !password ? {} : { password }),
       };
-
-      // Remove password if empty in edit mode
-      if (isEditMode && !payload.password) {
-        delete payload.password;
-      }
 
       const url = isEditMode
         ? `${API_BASE_URL}/api/user-management/users/${editingUserId}`

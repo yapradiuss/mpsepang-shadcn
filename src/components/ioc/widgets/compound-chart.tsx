@@ -36,7 +36,7 @@ interface EkompaunSummary {
   };
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
 
 // Color palette for jenis kompaun types
 const JENIS_KOMPAUN_COLORS: Record<string, string> = {

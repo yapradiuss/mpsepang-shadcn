@@ -19,7 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { logActivity } from "@/lib/audit-logger";
 import { getCurrentUser, type User as UserType } from "@/lib/auth";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
 
 export function Header() {
   const router = useRouter();

@@ -34,7 +34,7 @@ import {
 } from "@/lib/ioc-preferences";
 import { DraggableWidget } from "@/components/ioc/draggable-widget";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
 import MapFilters from "@/components/ioc/map-filters";
 import ExampleWidget from "@/components/ioc/widgets/example-widget";
 import WeatherWidget from "@/components/ioc/widgets/weather-widget";

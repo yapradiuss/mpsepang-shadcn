@@ -163,7 +163,7 @@ export function savePreferences(preferences: IOCPreferences): boolean {
  * Save preferences to backend API (future implementation)
  */
 export async function savePreferencesToAPI(preferences: IOCPreferences): Promise<boolean> {
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
   
   try {
     const token = localStorage.getItem('token');
@@ -203,7 +203,7 @@ export async function savePreferencesToAPI(preferences: IOCPreferences): Promise
  * Load preferences from backend API (future implementation)
  */
 export async function loadPreferencesFromAPI(): Promise<IOCPreferences | null> {
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
   
   try {
     const token = localStorage.getItem('token');
