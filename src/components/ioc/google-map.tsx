@@ -509,7 +509,7 @@ export default function GoogleMap({
   showTrafficLight = false,
   showWartaKawasanLapang = false,
   showZonAhliMajlis = false,
-  apiUrl = 'http://localhost:3001/api/blok_perancangan'
+  apiUrl = 'http://http://43.216.228.155:3001//api/blok_perancangan'
 }: GoogleMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
@@ -922,7 +922,7 @@ export default function GoogleMap({
   // Function to load and plot bridge data
   const loadBridgeData = async (map: any, dataLayer: any) => {
     try {
-      const bridgeApiUrl = 'http://localhost:3001/api/bridge';
+      const bridgeApiUrl = 'http://http://43.216.228.155:3001//api/bridge';
       console.log('Fetching bridge data from API...', bridgeApiUrl);
       const response = await fetch(bridgeApiUrl);
       
@@ -1132,7 +1132,7 @@ export default function GoogleMap({
   // Function to load and plot CCTV data
   const loadCCTVData = async (map: any) => {
     try {
-      const cctvApiUrl = 'http://localhost:3001/api/cctv';
+      const cctvApiUrl = 'http://http://43.216.228.155:3001//api/cctv';
       console.log('Fetching CCTV data from API...', cctvApiUrl);
       const response = await fetch(cctvApiUrl);
       
@@ -1249,7 +1249,7 @@ export default function GoogleMap({
   // Function to load and plot Feeder Pillar data
   const loadFeederPillarData = async (map: any) => {
     try {
-      const feederPillarApiUrl = 'http://localhost:3001/api/feeder_pillar';
+      const feederPillarApiUrl = 'http://http://43.216.228.155:3001//api/feeder_pillar';
       console.log('Fetching feeder_pillar data from API...', feederPillarApiUrl);
       const response = await fetch(feederPillarApiUrl);
       
@@ -1369,7 +1369,7 @@ export default function GoogleMap({
   // Function to load and plot Location Map Aset data
   const loadLocationMapAsetData = async (map: any) => {
     try {
-      const locationMapAsetApiUrl = 'http://localhost:3001/api/location_map_aset';
+      const locationMapAsetApiUrl = 'http://http://43.216.228.155:3001//api/location_map_aset';
       console.log('Fetching location_map_aset data from API...', locationMapAsetApiUrl);
       const response = await fetch(locationMapAsetApiUrl);
       
@@ -1489,7 +1489,7 @@ export default function GoogleMap({
   // Function to load and plot Location Map Aset Item data
   const loadLocationMapAsetItemData = async (map: any) => {
     try {
-      const locationMapAsetItemApiUrl = 'http://localhost:3001/api/location_map_aset_item';
+      const locationMapAsetItemApiUrl = 'http://http://43.216.228.155:3001//api/location_map_aset_item';
       console.log('Fetching location_map_aset_item data from API...', locationMapAsetItemApiUrl);
       const response = await fetch(locationMapAsetItemApiUrl);
       
@@ -1609,7 +1609,7 @@ export default function GoogleMap({
   // Function to load and plot Lokasi Banjir data
   const loadLokasiBanjirData = async (map: any) => {
     try {
-      const lokasiBanjirApiUrl = 'http://localhost:3001/api/lokasi_banjir';
+      const lokasiBanjirApiUrl = 'http://http://43.216.228.155:3001//api/lokasi_banjir';
       console.log('Fetching lokasi_banjir data from API...', lokasiBanjirApiUrl);
       const response = await fetch(lokasiBanjirApiUrl);
       
@@ -1729,7 +1729,7 @@ export default function GoogleMap({
   // Function to load and plot charting_km data
   const loadChartingKmData = async (map: any, dataLayer: any) => {
     try {
-      const chartingKmApiUrl = 'http://localhost:3001/api/charting_km';
+      const chartingKmApiUrl = 'http://http://43.216.228.155:3001//api/charting_km';
       console.log('Fetching charting_km data from API...', chartingKmApiUrl);
       const response = await fetch(chartingKmApiUrl);
       
@@ -1956,7 +1956,7 @@ export default function GoogleMap({
   // Function to load and plot constructed_slope data
   const loadConstructedSlopeData = async (map: any, dataLayer: any) => {
     try {
-      const constructedSlopeApiUrl = 'http://localhost:3001/api/constructed_slope';
+      const constructedSlopeApiUrl = 'http://http://43.216.228.155:3001//api/constructed_slope';
       console.log('Fetching constructed_slope data from API...', constructedSlopeApiUrl);
       const response = await fetch(constructedSlopeApiUrl);
       
@@ -2158,7 +2158,7 @@ export default function GoogleMap({
   // Function to load and plot drainage data
   const loadDrainageData = async (map: any, dataLayer: any) => {
     try {
-      const drainageApiUrl = 'http://localhost:3001/api/drainage';
+      const drainageApiUrl = 'http://http://43.216.228.155:3001//api/drainage';
       console.log('Fetching drainage data from API...', drainageApiUrl);
       const response = await fetch(drainageApiUrl);
       
@@ -2363,7 +2363,7 @@ export default function GoogleMap({
   // Function to load and plot Flexible Post data
   const loadFlexiblePostData = async (map: any, dataLayer: any) => {
     try {
-      const flexiblePostApiUrl = 'http://localhost:3001/api/flexible_post';
+      const flexiblePostApiUrl = 'http://http://43.216.228.155:3001//api/flexible_post';
       console.log('Fetching flexible_post data from API...', flexiblePostApiUrl);
       const response = await fetch(flexiblePostApiUrl);
       
@@ -2592,7 +2592,7 @@ export default function GoogleMap({
   // Function to load and plot Gtmix data
   const loadGtmixData = async (map: any, dataLayer: any) => {
     try {
-      const gtmixApiUrl = 'http://localhost:3001/api/gtmix';
+      const gtmixApiUrl = 'http://http://43.216.228.155:3001//api/gtmix';
       console.log('Fetching gtmix data from API...', gtmixApiUrl);
       const response = await fetch(gtmixApiUrl);
       
@@ -2772,7 +2772,7 @@ export default function GoogleMap({
   // Function to load and plot Sempadan Taman data
   const loadSempadanTamanData = async (map: any, dataLayer: any) => {
     try {
-      const sempadanTamanApiUrl = 'http://localhost:3001/api/sempadan_taman';
+      const sempadanTamanApiUrl = 'http://http://43.216.228.155:3001//api/sempadan_taman';
       console.log('Fetching sempadan_taman data from API...', sempadanTamanApiUrl);
       const response = await fetch(sempadanTamanApiUrl);
       
@@ -2991,7 +2991,7 @@ export default function GoogleMap({
   // Function to load and plot Gtnh Semasa data
   const loadGtnhSemasaData = async (map: any, dataLayer: any) => {
     try {
-      const gtnhSemasaApiUrl = 'http://localhost:3001/api/gtnh_semasa';
+      const gtnhSemasaApiUrl = 'http://http://43.216.228.155:3001//api/gtnh_semasa';
       console.log('Fetching gtnh_semasa data from API...', gtnhSemasaApiUrl);
       const response = await fetch(gtnhSemasaApiUrl);
       
@@ -3171,7 +3171,7 @@ export default function GoogleMap({
   // Function to load and plot Jalan data
   const loadJalanData = async (map: any, dataLayer: any) => {
     try {
-      const jalanApiUrl = 'http://localhost:3001/api/jalan';
+      const jalanApiUrl = 'http://http://43.216.228.155:3001//api/jalan';
       console.log('Fetching jalan data from API...', jalanApiUrl);
       const response = await fetch(jalanApiUrl);
       
@@ -3400,7 +3400,7 @@ export default function GoogleMap({
   // Function to load and plot Jalan Kejuruteraan data
   const loadJalanKejuruteraanData = async (map: any, dataLayer: any) => {
     try {
-      const jalanKejuruteraanApiUrl = 'http://localhost:3001/api/jalan_kejuruteraan';
+      const jalanKejuruteraanApiUrl = 'http://http://43.216.228.155:3001//api/jalan_kejuruteraan';
       console.log('Fetching jalan_kejuruteraan data from API...', jalanKejuruteraanApiUrl);
       const response = await fetch(jalanKejuruteraanApiUrl);
       
@@ -3629,7 +3629,7 @@ export default function GoogleMap({
   // Function to load and plot Komited KM data
   const loadKomitedKmData = async (map: any, dataLayer: any) => {
     try {
-      const komitedKmApiUrl = 'http://localhost:3001/api/komited_km';
+      const komitedKmApiUrl = 'http://http://43.216.228.155:3001//api/komited_km';
       console.log('Fetching komited_km data from API...', komitedKmApiUrl);
       const response = await fetch(komitedKmApiUrl);
       
@@ -3881,7 +3881,7 @@ export default function GoogleMap({
   // Function to load and plot NDCDB20 data
   const loadNdcdb20Data = async (map: any, dataLayer: any) => {
     try {
-      const ndcdb20ApiUrl = 'http://localhost:3001/api/ndcdb20';
+      const ndcdb20ApiUrl = 'http://http://43.216.228.155:3001//api/ndcdb20';
       console.log('Fetching ndcdb20 data from API...', ndcdb20ApiUrl);
       const response = await fetch(ndcdb20ApiUrl);
       
@@ -4130,7 +4130,7 @@ export default function GoogleMap({
   // Function to load and plot NDCDB23 data
   const loadNdcdb23Data = async (map: any, dataLayer: any) => {
     try {
-      const ndcdb23ApiUrl = 'http://localhost:3001/api/ndcdb23';
+      const ndcdb23ApiUrl = 'http://http://43.216.228.155:3001//api/ndcdb23';
       console.log('Fetching ndcdb23 data from API...', ndcdb23ApiUrl);
       const response = await fetch(ndcdb23ApiUrl);
       
@@ -4635,7 +4635,7 @@ export default function GoogleMap({
     return loadPasarData(
       map,
       dataLayer,
-      'http://localhost:3001/api/pasar_awam',
+      'http://http://43.216.228.155:3001//api/pasar_awam',
       'pasar_awam',
       setPasarAwamData,
       pasarAwamMarkersRef,
@@ -4648,7 +4648,7 @@ export default function GoogleMap({
     return loadPasarData(
       map,
       dataLayer,
-      'http://localhost:3001/api/pasar_malam',
+      'http://http://43.216.228.155:3001//api/pasar_malam',
       'pasar_malam',
       setPasarMalamData,
       pasarMalamMarkersRef,
@@ -4661,7 +4661,7 @@ export default function GoogleMap({
     return loadPasarData(
       map,
       dataLayer,
-      'http://localhost:3001/api/pasar_sari',
+      'http://http://43.216.228.155:3001//api/pasar_sari',
       'pasar_sari',
       setPasarSariData,
       pasarSariMarkersRef,
@@ -4674,7 +4674,7 @@ export default function GoogleMap({
     return loadPasarData(
       map,
       dataLayer,
-      'http://localhost:3001/api/pasar_tani',
+      'http://http://43.216.228.155:3001//api/pasar_tani',
       'pasar_tani',
       setPasarTaniData,
       pasarTaniMarkersRef,
@@ -4685,7 +4685,7 @@ export default function GoogleMap({
   // Function to load and plot Road Marking Linear data
   const loadRoadMarkingLinearData = async (map: any, dataLayer: any) => {
     try {
-      const roadMarkingLinearApiUrl = 'http://localhost:3001/api/road_marking_linear';
+      const roadMarkingLinearApiUrl = 'http://http://43.216.228.155:3001//api/road_marking_linear';
       console.log('Fetching road_marking_linear data from API...', roadMarkingLinearApiUrl);
       const response = await fetch(roadMarkingLinearApiUrl);
       
@@ -4909,7 +4909,7 @@ export default function GoogleMap({
   // Function to load and plot Road Median data
   const loadRoadMedianData = async (map: any, dataLayer: any) => {
     try {
-      const roadMedianApiUrl = 'http://localhost:3001/api/road_median';
+      const roadMedianApiUrl = 'http://http://43.216.228.155:3001//api/road_median';
       console.log('Fetching road_median data from API...', roadMedianApiUrl);
       const response = await fetch(roadMedianApiUrl);
       
@@ -5133,7 +5133,7 @@ export default function GoogleMap({
   // Function to load and plot Road Shoulder data
   const loadRoadShoulderData = async (map: any, dataLayer: any) => {
     try {
-      const roadShoulderApiUrl = 'http://localhost:3001/api/road_shoulder';
+      const roadShoulderApiUrl = 'http://http://43.216.228.155:3001//api/road_shoulder';
       console.log('Fetching road_shoulder data from API...', roadShoulderApiUrl);
       const response = await fetch(roadShoulderApiUrl);
       
@@ -5357,7 +5357,7 @@ export default function GoogleMap({
   // Function to load and plot Sempadan Daerah data
   const loadSempadanDaerahData = async (map: any, dataLayer: any) => {
     try {
-      const sempadanDaerahApiUrl = 'http://localhost:3001/api/sempadan_daerah';
+      const sempadanDaerahApiUrl = 'http://http://43.216.228.155:3001//api/sempadan_daerah';
       const response = await fetch(sempadanDaerahApiUrl);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
@@ -5442,7 +5442,7 @@ export default function GoogleMap({
   // Function to load and plot Sampah Haram data
   const loadSampahHaramData = async (map: any) => {
     try {
-      const sampahHaramApiUrl = 'http://localhost:3001/api/sampah_haram';
+      const sampahHaramApiUrl = 'http://http://43.216.228.155:3001//api/sampah_haram';
       console.log('Fetching sampah_haram data from API...', sampahHaramApiUrl);
       const response = await fetch(sampahHaramApiUrl);
       
@@ -5561,7 +5561,7 @@ export default function GoogleMap({
   // Function to load and plot Signboard data
   const loadSignboardData = async (map: any) => {
     try {
-      const signboardApiUrl = 'http://localhost:3001/api/signboard';
+      const signboardApiUrl = 'http://http://43.216.228.155:3001//api/signboard';
       console.log('Fetching signboard data from API...', signboardApiUrl);
       const response = await fetch(signboardApiUrl);
       
@@ -5680,7 +5680,7 @@ export default function GoogleMap({
   // Function to load and plot Sport Facility data
   const loadSportFacilityData = async (map: any) => {
     try {
-      const sportFacilityApiUrl = 'http://localhost:3001/api/sport_facility';
+      const sportFacilityApiUrl = 'http://http://43.216.228.155:3001//api/sport_facility';
       console.log('Fetching sport_facility data from API...', sportFacilityApiUrl);
       const response = await fetch(sportFacilityApiUrl);
       
@@ -5799,7 +5799,7 @@ export default function GoogleMap({
   // Function to load and plot Street Lighting data
   const loadStreetLightingData = async (map: any) => {
     try {
-      const streetLightingApiUrl = 'http://localhost:3001/api/street_lighting';
+      const streetLightingApiUrl = 'http://http://43.216.228.155:3001//api/street_lighting';
       console.log('Fetching street_lighting data from API...', streetLightingApiUrl);
       const response = await fetch(streetLightingApiUrl);
       
@@ -5918,7 +5918,7 @@ export default function GoogleMap({
   // Function to load and plot Loranet Streetlight data
   const loadLoranetStreetlightData = async (map: any) => {
     try {
-      const loranetApiUrl = 'http://localhost:3001/api/loranet/streetlight';
+      const loranetApiUrl = 'http://http://43.216.228.155:3001//api/loranet/streetlight';
       console.log('Fetching Loranet streetlight data from API...', loranetApiUrl);
       const response = await fetch(loranetApiUrl);
       
@@ -6080,7 +6080,7 @@ export default function GoogleMap({
   // Function to load and plot Taman Perumahan data
   const loadTamanPerumahanData = async (map: any, dataLayer: any) => {
     try {
-      const tamanPerumahanApiUrl = 'http://localhost:3001/api/taman_perumahan';
+      const tamanPerumahanApiUrl = 'http://http://43.216.228.155:3001//api/taman_perumahan';
       const response = await fetch(tamanPerumahanApiUrl);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
@@ -6165,7 +6165,7 @@ export default function GoogleMap({
   // Function to load and plot Traffic Light data
   const loadTrafficLightData = async (map: any) => {
     try {
-      const trafficLightApiUrl = 'http://localhost:3001/api/traffic-light';
+      const trafficLightApiUrl = 'http://http://43.216.228.155:3001//api/traffic-light';
       console.log('Fetching traffic-light data from API...', trafficLightApiUrl);
       const response = await fetch(trafficLightApiUrl);
       
@@ -6284,7 +6284,7 @@ export default function GoogleMap({
   // Function to load and plot Warta Kawasan Lapang data
   const loadWartaKawasanLapangData = async (map: any, dataLayer: any) => {
     try {
-      const wartaKawasanLapangApiUrl = 'http://localhost:3001/api/warta_kawasan_lapang';
+      const wartaKawasanLapangApiUrl = 'http://http://43.216.228.155:3001//api/warta_kawasan_lapang';
       console.log('Fetching warta_kawasan_lapang data from API...', wartaKawasanLapangApiUrl);
       const response = await fetch(wartaKawasanLapangApiUrl);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -6372,7 +6372,7 @@ export default function GoogleMap({
   // Function to load and plot Zon Ahli Majlis data
   const loadZonAhliMajlisData = async (map: any, dataLayer: any) => {
     try {
-      const zonAhliMajlisApiUrl = 'http://localhost:3001/api/zon_ahli_majlis';
+      const zonAhliMajlisApiUrl = 'http://http://43.216.228.155:3001//api/zon_ahli_majlis';
       console.log('Fetching zon_ahli_majlis data from API...', zonAhliMajlisApiUrl);
       const response = await fetch(zonAhliMajlisApiUrl);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -6460,7 +6460,7 @@ export default function GoogleMap({
   // Function to load and plot Road Marking Point data
   const loadRoadMarkingPointData = async (map: any) => {
     try {
-      const roadMarkingPointApiUrl = 'http://localhost:3001/api/road_marking_point';
+      const roadMarkingPointApiUrl = 'http://http://43.216.228.155:3001//api/road_marking_point';
       console.log('Fetching road_marking_point data from API...', roadMarkingPointApiUrl);
       const response = await fetch(roadMarkingPointApiUrl);
       
@@ -6579,7 +6579,7 @@ export default function GoogleMap({
   // Function to load and plot Road Hump data
   const loadRoadHumpData = async (map: any) => {
     try {
-      const roadHumpApiUrl = 'http://localhost:3001/api/road_hump';
+      const roadHumpApiUrl = 'http://http://43.216.228.155:3001//api/road_hump';
       console.log('Fetching road_hump data from API...', roadHumpApiUrl);
       const response = await fetch(roadHumpApiUrl);
       
@@ -6697,7 +6697,7 @@ export default function GoogleMap({
 
   const loadEarthWorkData = async (map: any, dataLayer: any) => {
     try {
-      const earthWorkApiUrl = 'http://localhost:3001/api/earth_work';
+      const earthWorkApiUrl = 'http://http://43.216.228.155:3001//api/earth_work';
       console.log('Fetching earth_work data from API...', earthWorkApiUrl);
       const response = await fetch(earthWorkApiUrl);
       

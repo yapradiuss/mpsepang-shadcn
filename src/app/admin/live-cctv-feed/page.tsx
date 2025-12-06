@@ -234,7 +234,7 @@ function HLSVideoPlayer({ src, name }: { src: string; name: string }) {
 type GridSize = "2x2" | "3x3" | "4x4" | "full";
 
 const REFRESH_INTERVAL = 10 * 60 * 1000; // 10 minutes
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'http://http://43.216.228.155:3001/';
 
 export default function LiveCCTVFeedPage() {
   const [feeds, setFeeds] = useState<CCTVFeed[]>([]);

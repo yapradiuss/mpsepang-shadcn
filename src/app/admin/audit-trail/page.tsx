@@ -31,7 +31,7 @@ import {
 import { useState, useEffect, useCallback } from "react";
 import { logPageView } from "@/lib/audit-logger";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://http://43.216.228.155:3001/';
 
 type ActionType = 
   | "CREATE" 

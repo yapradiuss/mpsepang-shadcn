@@ -85,7 +85,7 @@ export default function StreetlightStatus({
     setError(null);
     
     try {
-      const apiUrl = 'http://localhost:3001/api/loranet/streetlight';
+      const apiUrl = 'http://http://43.216.228.155:3001//api/loranet/streetlight';
       const now = Date.now();
       const cacheKey = 'all_streetlights';
       const cached = cacheRef.current.get(cacheKey);
