@@ -11,7 +11,10 @@ import { Loader2, Lock, Mail, AlertCircle } from "lucide-react";
 import { logActivity } from "@/lib/audit-logger";
 import { isAuthenticated } from "@/lib/auth";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
+// Use relative path which will be proxied via Next.js rewrites to avoid mixed content issues
+const API_BASE_URL = typeof window !== 'undefined' 
+  ? '' // Browser: use relative path (proxied)
+  : (process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001'); // Server-side fallback
 
 function LoginForm() {
   const router = useRouter();

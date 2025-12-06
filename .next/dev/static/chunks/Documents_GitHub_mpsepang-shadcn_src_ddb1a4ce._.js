@@ -663,7 +663,9 @@ function HLSVideoPlayer({ src, name }) {
 _s(HLSVideoPlayer, "yUlaEYx9FXwWQIdDZvvQa5XILBA=");
 _c = HLSVideoPlayer;
 const REFRESH_INTERVAL = 10 * 60 * 1000; // 10 minutes
-const API_BASE_URL = 'http://43.216.228.155:3001';
+// Use relative path in browser (proxied via Next.js rewrites) to avoid mixed content issues
+const API_BASE_URL = ("TURBOPACK compile-time truthy", 1) ? '' // Browser: use relative path (proxied)
+ : "TURBOPACK unreachable"; // Server-side fallback
 function LiveCCTVFeedPage() {
     _s1();
     const [feeds, setFeeds] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -913,7 +915,7 @@ function LiveCCTVFeedPage() {
                     children: "Online"
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                    lineNumber: 481,
+                    lineNumber: 484,
                     columnNumber: 16
                 }, this);
             case "offline":
@@ -922,7 +924,7 @@ function LiveCCTVFeedPage() {
                     children: "Offline"
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                    lineNumber: 483,
+                    lineNumber: 486,
                     columnNumber: 16
                 }, this);
             case "maintenance":
@@ -931,7 +933,7 @@ function LiveCCTVFeedPage() {
                     children: "Maintenance"
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                    lineNumber: 485,
+                    lineNumber: 488,
                     columnNumber: 16
                 }, this);
         }
@@ -1036,7 +1038,7 @@ function LiveCCTVFeedPage() {
                         children: "Live CCTV Feed"
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 580,
+                        lineNumber: 583,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1044,13 +1046,13 @@ function LiveCCTVFeedPage() {
                         children: "Monitor live camera feeds from all security cameras"
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 581,
+                        lineNumber: 584,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                lineNumber: 579,
+                lineNumber: 582,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1069,7 +1071,7 @@ function LiveCCTVFeedPage() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 593,
+                                            lineNumber: 596,
                                             columnNumber: 19
                                         }, this),
                                         site.name,
@@ -1079,33 +1081,33 @@ function LiveCCTVFeedPage() {
                                             children: site.deviceIds.length
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 595,
+                                            lineNumber: 598,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, site.id, true, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 592,
+                                    lineNumber: 595,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                            lineNumber: 590,
+                            lineNumber: 593,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 589,
+                        lineNumber: 592,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                    lineNumber: 588,
+                    lineNumber: 591,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                lineNumber: 587,
+                lineNumber: 590,
                 columnNumber: 7
             }, this),
             showCameraSelector && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1121,20 +1123,20 @@ function LiveCCTVFeedPage() {
                                         children: "Total Cameras"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 610,
+                                        lineNumber: 613,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
                                         className: "h-4 w-4 text-muted-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 611,
+                                        lineNumber: 614,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 609,
+                                lineNumber: 612,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1143,18 +1145,18 @@ function LiveCCTVFeedPage() {
                                     children: feeds.length
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 614,
+                                    lineNumber: 617,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 613,
+                                lineNumber: 616,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 608,
+                        lineNumber: 611,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1167,20 +1169,20 @@ function LiveCCTVFeedPage() {
                                         children: "Online"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 619,
+                                        lineNumber: 622,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "h-4 w-4 rounded-full bg-green-500"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 620,
+                                        lineNumber: 623,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 618,
+                                lineNumber: 621,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1189,18 +1191,18 @@ function LiveCCTVFeedPage() {
                                     children: onlineCount
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 623,
+                                    lineNumber: 626,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 622,
+                                lineNumber: 625,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 617,
+                        lineNumber: 620,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1213,20 +1215,20 @@ function LiveCCTVFeedPage() {
                                         children: "Offline"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 628,
+                                        lineNumber: 631,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "h-4 w-4 rounded-full bg-red-500"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 629,
+                                        lineNumber: 632,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 627,
+                                lineNumber: 630,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1235,18 +1237,18 @@ function LiveCCTVFeedPage() {
                                     children: offlineCount
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 632,
+                                    lineNumber: 635,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 631,
+                                lineNumber: 634,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 626,
+                        lineNumber: 629,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1259,20 +1261,20 @@ function LiveCCTVFeedPage() {
                                         children: "Maintenance"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 637,
+                                        lineNumber: 640,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "h-4 w-4 rounded-full bg-yellow-500"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 638,
+                                        lineNumber: 641,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 636,
+                                lineNumber: 639,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1281,24 +1283,24 @@ function LiveCCTVFeedPage() {
                                     children: maintenanceCount
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 641,
+                                    lineNumber: 644,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 640,
+                                lineNumber: 643,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 635,
+                        lineNumber: 638,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                lineNumber: 607,
+                lineNumber: 610,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1320,7 +1322,7 @@ function LiveCCTVFeedPage() {
                                                     children: "Grid Size:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                    lineNumber: 655,
+                                                    lineNumber: 658,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1338,14 +1340,14 @@ function LiveCCTVFeedPage() {
                                                             className: "h-4 w-4 mr-1"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 667,
+                                                            lineNumber: 670,
                                                             columnNumber: 23
                                                         }, this),
                                                         "2x2"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                    lineNumber: 656,
+                                                    lineNumber: 659,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1363,14 +1365,14 @@ function LiveCCTVFeedPage() {
                                                             className: "h-4 w-4 mr-1"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 681,
+                                                            lineNumber: 684,
                                                             columnNumber: 23
                                                         }, this),
                                                         "3x3"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                    lineNumber: 670,
+                                                    lineNumber: 673,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1388,14 +1390,14 @@ function LiveCCTVFeedPage() {
                                                             className: "h-4 w-4 mr-1"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 695,
+                                                            lineNumber: 698,
                                                             columnNumber: 23
                                                         }, this),
                                                         "4x4"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                    lineNumber: 684,
+                                                    lineNumber: 687,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1413,25 +1415,25 @@ function LiveCCTVFeedPage() {
                                                             className: "h-4 w-4 mr-1"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 709,
+                                                            lineNumber: 712,
                                                             columnNumber: 23
                                                         }, this),
                                                         "Full"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                    lineNumber: 698,
+                                                    lineNumber: 701,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 654,
+                                            lineNumber: 657,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 653,
+                                        lineNumber: 656,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1446,14 +1448,14 @@ function LiveCCTVFeedPage() {
                                                         className: `h-4 w-4 mr-1 ${autoRefresh ? 'animate-spin' : ''}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 721,
+                                                        lineNumber: 724,
                                                         columnNumber: 21
                                                     }, this),
                                                     "Auto"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 716,
+                                                lineNumber: 719,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1466,14 +1468,14 @@ function LiveCCTVFeedPage() {
                                                         className: `h-4 w-4 mr-1 ${isLoading || loadingRef.current ? 'animate-spin' : ''}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 730,
+                                                        lineNumber: 733,
                                                         columnNumber: 21
                                                     }, this),
                                                     "Refresh"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 724,
+                                                lineNumber: 727,
                                                 columnNumber: 19
                                             }, this),
                                             isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1486,7 +1488,7 @@ function LiveCCTVFeedPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 734,
+                                                lineNumber: 737,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1502,7 +1504,7 @@ function LiveCCTVFeedPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 738,
+                                                lineNumber: 741,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Sheet"], {
@@ -1518,19 +1520,19 @@ function LiveCCTVFeedPage() {
                                                                     className: "h-4 w-4 mr-2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                    lineNumber: 744,
+                                                                    lineNumber: 747,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 "Select Cameras"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 743,
+                                                            lineNumber: 746,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 742,
+                                                        lineNumber: 745,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -1543,7 +1545,7 @@ function LiveCCTVFeedPage() {
                                                                         children: "Select Cameras"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 750,
+                                                                        lineNumber: 753,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SheetDescription"], {
@@ -1556,13 +1558,13 @@ function LiveCCTVFeedPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 751,
+                                                                        lineNumber: 754,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 749,
+                                                                lineNumber: 752,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1578,20 +1580,20 @@ function LiveCCTVFeedPage() {
                                                                                 className: "pl-9"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                lineNumber: 758,
+                                                                                lineNumber: 761,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
                                                                                 className: "absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                lineNumber: 764,
+                                                                                lineNumber: 767,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 757,
+                                                                        lineNumber: 760,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1615,14 +1617,14 @@ function LiveCCTVFeedPage() {
                                                                                                         onClick: (e)=>e.stopPropagation()
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                        lineNumber: 786,
+                                                                                                        lineNumber: 789,
                                                                                                         columnNumber: 37
                                                                                                     }, this),
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
                                                                                                         className: "h-4 w-4 text-muted-foreground"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                        lineNumber: 791,
+                                                                                                        lineNumber: 794,
                                                                                                         columnNumber: 37
                                                                                                     }, this),
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1630,20 +1632,20 @@ function LiveCCTVFeedPage() {
                                                                                                         children: feed.name
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                        lineNumber: 792,
+                                                                                                        lineNumber: 795,
                                                                                                         columnNumber: 37
                                                                                                     }, this)
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                lineNumber: 785,
+                                                                                                lineNumber: 788,
                                                                                                 columnNumber: 35
                                                                                             }, this),
                                                                                             getStatusBadge(feed.status)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                        lineNumber: 784,
+                                                                                        lineNumber: 787,
                                                                                         columnNumber: 33
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1653,7 +1655,7 @@ function LiveCCTVFeedPage() {
                                                                                                 children: feed.location
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                lineNumber: 797,
+                                                                                                lineNumber: 800,
                                                                                                 columnNumber: 35
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1664,65 +1666,65 @@ function LiveCCTVFeedPage() {
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                                lineNumber: 798,
+                                                                                                lineNumber: 801,
                                                                                                 columnNumber: 35
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                        lineNumber: 796,
+                                                                                        lineNumber: 799,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 ]
                                                                             }, feed.id, true, {
                                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                                lineNumber: 775,
+                                                                                lineNumber: 778,
                                                                                 columnNumber: 31
                                                                             }, this);
                                                                         })
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 768,
+                                                                        lineNumber: 771,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 755,
+                                                                lineNumber: 758,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 748,
+                                                        lineNumber: 751,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 741,
+                                                lineNumber: 744,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 715,
+                                        lineNumber: 718,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 652,
+                                lineNumber: 655,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                            lineNumber: 651,
+                            lineNumber: 654,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 650,
+                        lineNumber: 653,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1738,7 +1740,7 @@ function LiveCCTVFeedPage() {
                                             className: "h-16 w-16 mx-auto mb-4 text-muted-foreground animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 818,
+                                            lineNumber: 821,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1746,18 +1748,18 @@ function LiveCCTVFeedPage() {
                                             children: "Loading cameras..."
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 819,
+                                            lineNumber: 822,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 817,
+                                    lineNumber: 820,
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 816,
+                                lineNumber: 819,
                                 columnNumber: 17
                             }, this) : selectedFeeds.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                 children: [
@@ -1781,7 +1783,7 @@ function LiveCCTVFeedPage() {
                                                                 name: feed.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 839,
+                                                                lineNumber: 842,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1791,14 +1793,14 @@ function LiveCCTVFeedPage() {
                                                                         className: "h-1.5 w-1.5 bg-white rounded-full animate-pulse"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 841,
+                                                                        lineNumber: 844,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     "LIVE"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 840,
+                                                                lineNumber: 843,
                                                                 columnNumber: 29
                                                             }, this)
                                                         ]
@@ -1811,7 +1813,7 @@ function LiveCCTVFeedPage() {
                                                                     className: "h-6 w-6 mx-auto mb-1 text-muted-foreground animate-spin"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                    lineNumber: 848,
+                                                                    lineNumber: 851,
                                                                     columnNumber: 31
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1819,18 +1821,18 @@ function LiveCCTVFeedPage() {
                                                                     children: "Loading..."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                    lineNumber: 849,
+                                                                    lineNumber: 852,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 847,
+                                                            lineNumber: 850,
                                                             columnNumber: 29
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 846,
+                                                        lineNumber: 849,
                                                         columnNumber: 27
                                                     }, this) : feed.status === "online" && feed.snapshotUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                         children: [
@@ -1845,7 +1847,7 @@ function LiveCCTVFeedPage() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 854,
+                                                                lineNumber: 857,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1855,14 +1857,14 @@ function LiveCCTVFeedPage() {
                                                                         className: "h-1.5 w-1.5 bg-white rounded-full animate-pulse"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                        lineNumber: 865,
+                                                                        lineNumber: 868,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     "LIVE"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 864,
+                                                                lineNumber: 867,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
@@ -1875,7 +1877,7 @@ function LiveCCTVFeedPage() {
                                                                     className: "h-6 w-6 mx-auto mb-1 text-muted-foreground"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                    lineNumber: 872,
+                                                                    lineNumber: 875,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1883,18 +1885,18 @@ function LiveCCTVFeedPage() {
                                                                     children: feed.status === "offline" ? "Offline" : "Maintenance"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                    lineNumber: 873,
+                                                                    lineNumber: 876,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                            lineNumber: 871,
+                                                            lineNumber: 874,
                                                             columnNumber: 27
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 870,
+                                                        lineNumber: 873,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1905,7 +1907,7 @@ function LiveCCTVFeedPage() {
                                                                 children: feed.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 880,
+                                                                lineNumber: 883,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1913,25 +1915,25 @@ function LiveCCTVFeedPage() {
                                                                 children: feed.isHLS ? 'Live Stream' : `Updated: ${feed.lastUpdate}`
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 881,
+                                                                lineNumber: 884,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 879,
+                                                        lineNumber: 882,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, feed.id, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 831,
+                                                lineNumber: 834,
                                                 columnNumber: 23
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 824,
+                                        lineNumber: 827,
                                         columnNumber: 19
                                     }, this),
                                     totalPages > 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1951,14 +1953,14 @@ function LiveCCTVFeedPage() {
                                                                 className: "h-4 w-4 mr-1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 900,
+                                                                lineNumber: 903,
                                                                 columnNumber: 27
                                                             }, this),
                                                             "Previous"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 893,
+                                                        lineNumber: 896,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1984,13 +1986,13 @@ function LiveCCTVFeedPage() {
                                                                 children: pageNum
                                                             }, pageNum, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 917,
+                                                                lineNumber: 920,
                                                                 columnNumber: 31
                                                             }, this);
                                                         })
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 903,
+                                                        lineNumber: 906,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2005,19 +2007,19 @@ function LiveCCTVFeedPage() {
                                                                 className: "h-4 w-4 ml-1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                                lineNumber: 937,
+                                                                lineNumber: 940,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 929,
+                                                        lineNumber: 932,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 892,
+                                                lineNumber: 895,
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2029,7 +2031,7 @@ function LiveCCTVFeedPage() {
                                                         children: currentPage
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 941,
+                                                        lineNumber: 944,
                                                         columnNumber: 30
                                                     }, this),
                                                     " of ",
@@ -2038,7 +2040,7 @@ function LiveCCTVFeedPage() {
                                                         children: totalPages
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                        lineNumber: 941,
+                                                        lineNumber: 944,
                                                         columnNumber: 98
                                                     }, this),
                                                     " (",
@@ -2047,13 +2049,13 @@ function LiveCCTVFeedPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                                lineNumber: 940,
+                                                lineNumber: 943,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 891,
+                                        lineNumber: 894,
                                         columnNumber: 21
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "px-6 py-2 border-t bg-muted/10 text-xs text-muted-foreground text-center",
@@ -2064,7 +2066,7 @@ function LiveCCTVFeedPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                        lineNumber: 945,
+                                        lineNumber: 948,
                                         columnNumber: 21
                                     }, this)
                                 ]
@@ -2077,7 +2079,7 @@ function LiveCCTVFeedPage() {
                                             className: "h-16 w-16 mx-auto mb-4 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 953,
+                                            lineNumber: 956,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2085,7 +2087,7 @@ function LiveCCTVFeedPage() {
                                             children: "No cameras selected"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 954,
+                                            lineNumber: 957,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2093,40 +2095,40 @@ function LiveCCTVFeedPage() {
                                             children: 'Click "Select Cameras" to choose cameras for grid view'
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                            lineNumber: 955,
+                                            lineNumber: 958,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                    lineNumber: 952,
+                                    lineNumber: 955,
                                     columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                                lineNumber: 951,
+                                lineNumber: 954,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                            lineNumber: 814,
+                            lineNumber: 817,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                        lineNumber: 813,
+                        lineNumber: 816,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-                lineNumber: 648,
+                lineNumber: 651,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/app/admin/live-cctv-feed/page.tsx",
-        lineNumber: 577,
+        lineNumber: 580,
         columnNumber: 5
     }, this);
 }

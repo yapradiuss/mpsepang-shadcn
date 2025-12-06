@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/admin" | "/admin/audit-trail" | "/admin/live-cctv-feed"
 type PageRoutes = never
 type LayoutRoutes = "/" | "/admin" | "/ioc-dashboard" | "/live-traffic-map"
 type RedirectRoutes = never
-type RewriteRoutes = never
+type RewriteRoutes = "/api/[[...path]]"
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
@@ -16,6 +16,7 @@ interface ParamMap {
   "/admin/live-cctv-feed": {}
   "/admin/news-ticker": {}
   "/admin/users": {}
+  "/api/[[...path]]": { "path"?: string[]; }
   "/ioc-dashboard": {}
   "/live-traffic-map": {}
   "/login": {}

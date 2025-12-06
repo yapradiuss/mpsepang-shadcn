@@ -52,7 +52,10 @@ import {
 import { useState, useEffect, useCallback } from "react";
 import { logPageView } from "@/lib/audit-logger";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
+// Use relative path in browser (proxied via Next.js rewrites) to avoid mixed content issues
+const API_BASE_URL = typeof window !== 'undefined' 
+  ? '' // Browser: use relative path (proxied)
+  : (process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001'); // Server-side fallback
 
 interface Page {
   id: number;

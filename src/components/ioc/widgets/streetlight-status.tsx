@@ -85,7 +85,8 @@ export default function StreetlightStatus({
     setError(null);
     
     try {
-      const apiUrl = 'http://43.216.228.155:3001/api/loranet/streetlight';
+      // Use relative path (proxied via Next.js rewrites) to avoid mixed content issues
+      const apiUrl = '/api/loranet/streetlight';
       const now = Date.now();
       const cacheKey = 'all_streetlights';
       const cached = cacheRef.current.get(cacheKey);

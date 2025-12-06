@@ -49,7 +49,9 @@ const __TURBOPACK__default__export__ = {
 
 __turbopack_context__.s([
     "cn",
-    ()=>cn
+    ()=>cn,
+    "getApiBaseUrl",
+    ()=>getApiBaseUrl
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mpsepang-shadcn/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mpsepang-shadcn/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-ssr] (ecmascript)");
@@ -57,6 +59,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsep
 ;
 function cn(...inputs) {
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+function getApiBaseUrl() {
+    // If explicitly set via environment variable, use it
+    if (process.env.NEXT_PUBLIC_API_URL) {
+        return process.env.NEXT_PUBLIC_API_URL;
+    }
+    // In browser, use relative path which will be proxied via Next.js rewrites
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    // Server-side fallback
+    return 'http://43.216.228.155:3001';
 }
 }),
 "[project]/Documents/GitHub/mpsepang-shadcn/src/components/ui/button.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -427,7 +440,8 @@ function clearAuth() {
 /**
  * Audit Logger Utility
  * Logs user activities to the backend audit trail API
- */ __turbopack_context__.s([
+ */ // Use relative path in browser (proxied via Next.js rewrites) to avoid mixed content issues
+__turbopack_context__.s([
     "logActivity",
     ()=>logActivity,
     "logPageView",
@@ -435,7 +449,8 @@ function clearAuth() {
     "logUserAction",
     ()=>logUserAction
 ]);
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
+const API_BASE_URL = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" // Browser: use relative path (proxied)
+ : process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001'; // Server-side fallback
 /**
  * Get current user info from localStorage or session
  * This should be replaced with your actual auth system
@@ -591,7 +606,9 @@ const sidebarItems = [
         pagePath: "/admin/news-ticker"
     }
 ];
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
+// Use relative path in browser (proxied via Next.js rewrites) to avoid mixed content issues
+const API_BASE_URL = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" // Browser: use relative path (proxied)
+ : process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001'; // Server-side fallback
 function Sidebar({ className }) {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -688,12 +705,12 @@ function Sidebar({ className }) {
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                lineNumber: 176,
+                                lineNumber: 179,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                            lineNumber: 175,
+                            lineNumber: 178,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -701,7 +718,7 @@ function Sidebar({ className }) {
                             children: "MPSepang Admin"
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                            lineNumber: 183,
+                            lineNumber: 186,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -723,25 +740,25 @@ function Sidebar({ className }) {
                                                 className: "mr-2 h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 210,
                                                 columnNumber: 23
                                             }, this),
                                             item.title
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 205,
                                         columnNumber: 21
                                     }, this)
                                 }, item.href, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 196,
                                     columnNumber: 19
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                            lineNumber: 186,
+                            lineNumber: 189,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -755,40 +772,40 @@ function Sidebar({ className }) {
                                         className: "mr-2 h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                        lineNumber: 220,
+                                        lineNumber: 223,
                                         columnNumber: 17
                                     }, this),
                                     "Log out"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                                lineNumber: 215,
+                                lineNumber: 218,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                            lineNumber: 214,
+                            lineNumber: 217,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                    lineNumber: 174,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                lineNumber: 173,
+                lineNumber: 176,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-            lineNumber: 172,
+            lineNumber: 175,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-        lineNumber: 171,
+        lineNumber: 174,
         columnNumber: 5
     }, this);
 }
@@ -806,12 +823,12 @@ function MobileSidebar() {
                 className: "h-5 w-5"
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                lineNumber: 241,
+                lineNumber: 244,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-            lineNumber: 240,
+            lineNumber: 243,
             columnNumber: 7
         }, this);
     }
@@ -827,17 +844,17 @@ function MobileSidebar() {
                         className: "h-5 w-5"
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                        lineNumber: 250,
+                        lineNumber: 253,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                    lineNumber: 249,
+                    lineNumber: 252,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                lineNumber: 248,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
@@ -847,23 +864,23 @@ function MobileSidebar() {
                     className: "h-full",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Sidebar, {}, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                        lineNumber: 255,
+                        lineNumber: 258,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                    lineNumber: 254,
+                    lineNumber: 257,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-                lineNumber: 253,
+                lineNumber: 256,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/sidebar.tsx",
-        lineNumber: 247,
+        lineNumber: 250,
         columnNumber: 5
     }, this);
 }
@@ -1301,7 +1318,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsep
 ;
 ;
 ;
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001';
+// Use relative path in browser (proxied via Next.js rewrites) to avoid mixed content issues
+const API_BASE_URL = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" // Browser: use relative path (proxied)
+ : process.env.NEXT_PUBLIC_API_URL || 'http://43.216.228.155:3001'; // Server-side fallback
 function Header() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
@@ -1460,7 +1479,7 @@ function Header() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$admin$2f$sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MobileSidebar"], {}, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                    lineNumber: 201,
+                    lineNumber: 204,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1472,7 +1491,7 @@ function Header() {
                                 className: "absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                lineNumber: 205,
+                                lineNumber: 208,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1481,18 +1500,18 @@ function Header() {
                                 className: "pl-8 w-full"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                lineNumber: 206,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                        lineNumber: 204,
+                        lineNumber: 207,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                    lineNumber: 203,
+                    lineNumber: 206,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1507,7 +1526,7 @@ function Header() {
                                     className: "h-5 w-5"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 219,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1516,13 +1535,13 @@ function Header() {
                                     children: "3"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 220,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                            lineNumber: 215,
+                            lineNumber: 218,
                             columnNumber: 11
                         }, this),
                         isMounted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -1540,30 +1559,30 @@ function Header() {
                                                     alt: getUserDisplayName()
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 233,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
                                                     children: getUserInitials()
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 234,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                            lineNumber: 229,
+                                            lineNumber: 232,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 231,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 230,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -1581,7 +1600,7 @@ function Header() {
                                                         children: getUserDisplayName()
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 241,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1589,7 +1608,7 @@ function Header() {
                                                         children: getUserEmail()
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 242,
                                                         columnNumber: 19
                                                     }, this),
                                                     getUserRole() && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1598,23 +1617,23 @@ function Header() {
                                                         children: getUserRole().toUpperCase()
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                        lineNumber: 243,
+                                                        lineNumber: 246,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                lineNumber: 237,
+                                                lineNumber: 240,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 239,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                            lineNumber: 252,
+                                            lineNumber: 255,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1625,32 +1644,32 @@ function Header() {
                                                     className: "mr-2 h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                    lineNumber: 257,
+                                                    lineNumber: 260,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "Log out"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                                    lineNumber: 258,
+                                                    lineNumber: 261,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 256,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                    lineNumber: 235,
+                                    lineNumber: 238,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                            lineNumber: 226,
+                            lineNumber: 229,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                             variant: "ghost",
@@ -1663,42 +1682,42 @@ function Header() {
                                         alt: "User"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                        lineNumber: 265,
+                                        lineNumber: 268,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mpsepang$2d$shadcn$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
                                         children: "??"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 269,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                                lineNumber: 264,
+                                lineNumber: 267,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                            lineNumber: 263,
+                            lineNumber: 266,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-                    lineNumber: 214,
+                    lineNumber: 217,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-            lineNumber: 200,
+            lineNumber: 203,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mpsepang-shadcn/src/components/admin/header.tsx",
-        lineNumber: 199,
+        lineNumber: 202,
         columnNumber: 5
     }, this);
 }
